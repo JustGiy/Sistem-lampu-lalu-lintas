@@ -198,8 +198,7 @@ if __name__=="__main__":
     ###########################
     #
     _,_,_,fft_noise,_,_,_ = data_analyzer(noise_chunks) # analyze recording
-    t_vec,data,freq_vec,fft_data,\
-            freq_array,fft_array,t_spectrogram = data_analyzer(data_chunks) # analyze recording
+    t_vec,data,freq_vec,fft_data,freq_array,fft_array,t_spectrogram = data_analyzer(data_chunks) # analyze recording
     # below, we're subtracting noise
     fft_array = np.subtract(fft_array,fft_noise)
     freq_vec = freq_array[0]
